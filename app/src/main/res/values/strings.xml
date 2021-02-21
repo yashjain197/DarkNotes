@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Dark Notes</string>
+    <string name="no_notes_avaiable">No Notes Avaiable</string>
+    <string name="no_notes_available">No Notes Available</string>
+    <string name="title">Title</string>
+    <string name="note">Note</string>
+    <string name="dark_notes">Dark Notes</string>
+</resources>

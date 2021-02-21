@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".WriteEditNotes">
+
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_style"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:layout_weight="0"
+        android:hint="@string/title"
+        android:inputType="textMultiLine"
+        android:paddingLeft="22dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#A1A1A1"
+        android:textSize="23dp"
+        android:cursorVisible="true"
+
+        />
+
+    <EditText
+        android:id="@+id/note"
+        android:cursorVisible="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:background="@drawable/title_style"
+        android:ems="10"
+        android:hint="@string/note"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:paddingLeft="24dp"
+        android:paddingTop="15dp"
+        android:textColorHint="#A1A1A1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Priority:"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        ></TextView>
+
+    <NumberPicker
+        android:id="@+id/number_picker_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></NumberPicker>
+
+</LinearLayout>
+</ScrollView>
